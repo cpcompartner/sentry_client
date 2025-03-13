@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-03-13T10:43:34+01:00">
+        <body>
+            <trans-unit id="sentryDns">
+                <source>DSN</source>
+                <target>DSN</target>
+            </trans-unit>
+            <trans-unit id="sentryDns.description">
+                <source>http://public_key@your-sentry-server.com/project-id, you can also use the SENTRY_DSN environment variable</source>
+                <target>http://public_key@your-sentry-server.com/project-id, können Sie auch die Umgebungsvariable SENTRY_DSN verwenden</target>
+            </trans-unit>
+            <trans-unit id="sentryReportUserInformation">
+                <source>Report user information</source>
+                <target>Benutzerinformationen melden</target>
+            </trans-unit>
+            <trans-unit id="sentryIgnoreMessageRegex">
+                <source>Exception/LogWriter message ignorelist regex</source>
+                <target>Exception/LogWriter message ignorelist regex</target>
+            </trans-unit>
+            <trans-unit id="sentryIgnoreMessageRegex.description">
+                <source>Use it to not report them. Example: /an exception message/</source>
+                <target>Verwenden Sie es, um sie nicht zu melden. Beispiel: /eine Ausnahmemeldung/</target>
+            </trans-unit>
+            <trans-unit id="sentryReportDatabaseConnectionErrors.description">
+                <source>Such service outages should better be handled by a monitoring system</source>
+                <target>Solche Dienstausfälle sollten besser durch ein Überwachungssystem gehandhabt werden</target>
+            </trans-unit>
+            <trans-unit id="sentryRelease">
+                <source>Release</source>
+                <target>Release</target>
+            </trans-unit>
+            <trans-unit id="sentryRelease.description">
+                <source>See https://docs.sentry.io/platforms/php/configuration/options/#release, you can also use the SENTRY_RELEASE environment variable</source>
+                <target>Siehe https://docs.sentry.io/platforms/php/configuration/options/#release, Sie können auch die Umgebungsvariable SENTRY_RELEASE verwenden</target>
+            </trans-unit>
+            <trans-unit id="sentryShowEventId">
+                <source>Show Event id</source>
+                <target>Ereignis-ID anzeigen</target>
+            </trans-unit>
+            <trans-unit id="sentryLogWriterComponentIgnorelist">
+                <source>LogWriter component ignorelist</source>
+                <target>LogWriter-Komponente ignorelist</target>
+            </trans-unit>
+            <trans-unit id="sentryLogWriterComponentIgnorelist.description">
+                <source>Comma separated list of LogRecord components which should not be reported. Example: TYPO3.CMS.Frontend.Controller.NoisyController</source>
+                <target>Durch Kommata getrennte Liste von LogRecord-Komponenten, die nicht gemeldet werden sollen. Beispiel: TYPO3.CMS.Frontend.Controller.NoisyController</target>
+            </trans-unit>
+            <trans-unit id="sentryDisableDatabaseLogging">
+                <source>Disable database logging</source>
+                <target>Datenbankprotokollierung deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="sentryDisableDatabaseLogging.description">
+                <source>TYPO3 logs exceptions to the database and to a log file. With this you can disable the database logging.</source>
+                <target>TYPO3 protokolliert Ausnahmen in der Datenbank und in einer Protokolldatei. Damit können Sie die Datenbankprotokollierung deaktivieren.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

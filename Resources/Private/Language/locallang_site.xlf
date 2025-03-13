@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" original="messages" datatype="plaintext" product-name="sentry_client" date="2025-03-13T10:43:34+01:00">
+        <header></header>
+        <body>
+            <trans-unit id="sentryDns">
+                <source>DSN</source>
+            </trans-unit>
+            <trans-unit id="sentryDns.description">
+                <source>http://public_key@your-sentry-server.com/project-id, you can also use the SENTRY_DSN environment variable</source>
+            </trans-unit>
+            <trans-unit id="sentryReportUserInformation">
+                <source>Report user information</source>
+            </trans-unit>
+            <trans-unit id="sentryReportUserInformation.description">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="sentryIgnoreMessageRegex">
+                <source>Exception/LogWriter message ignorelist regex</source>
+            </trans-unit>
+            <trans-unit id="sentryIgnoreMessageRegex.description">
+                <source>Use it to not report them. Example: /an exception message/</source>
+            </trans-unit>
+            <trans-unit id="sentryReportDatabaseConnectionErrors">
+                <source>Report database connection errors</source>
+            </trans-unit>
+            <trans-unit id="sentryReportDatabaseConnectionErrors.description">
+                <source>Such service outages should better be handled by a monitoring system</source>
+            </trans-unit>
+            <trans-unit id="sentryRelease">
+                <source>Release</source>
+            </trans-unit>
+            <trans-unit id="sentryRelease.description">
+                <source>See https://docs.sentry.io/platforms/php/configuration/options/#release, you can also use the SENTRY_RELEASE environment variable</source>
+            </trans-unit>
+            <trans-unit id="sentryShowEventId">
+                <source>Show Event id</source>
+            </trans-unit>
+            <trans-unit id="sentryShowEventId.description">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="sentryLogWriterComponentIgnorelist">
+                <source>LogWriter component ignorelist</source>
+            </trans-unit>
+            <trans-unit id="sentryLogWriterComponentIgnorelist.description">
+                <source>Comma separated list of LogRecord components which should not be reported. Example: TYPO3.CMS.Frontend.Controller.NoisyController</source>
+            </trans-unit>
+            <trans-unit id="sentryDisableDatabaseLogging">
+                <source>Disable database logging</source>
+            </trans-unit>
+            <trans-unit id="sentryDisableDatabaseLogging.description">
+                <source>TYPO3 logs exceptions to the database and to a log file. With this you can disable the database logging.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
