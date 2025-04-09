@@ -7,12 +7,6 @@ services:
   Networkteam\SentryClient\Client:
     public: true
 
-  Networkteam\SentryClient\ProductionExceptionHandler:
-    public: true
-
-  Networkteam\SentryClient\DebugExceptionHandler:
-    public: true
-
   Networkteam\SentryClient\EventListener\SystemInformationToolbarCollectorEventListener:
     tags:
       - name: event.listener
