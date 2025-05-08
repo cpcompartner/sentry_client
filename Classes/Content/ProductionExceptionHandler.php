@@ -3,7 +3,9 @@
 namespace Networkteam\SentryClient\Content;
 
 use Networkteam\SentryClient\Client;
+use Networkteam\SentryClient\Event\BeforeSentryCaptureEvent;
 use Networkteam\SentryClient\Service\ConfigurationService;
+use Psr\EventDispatcher\EventDispatcherInterface;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\ContentObject\AbstractContentObject;
@@ -25,7 +27,17 @@ class ProductionExceptionHandler extends \TYPO3\CMS\Frontend\ContentObject\Excep
             throw $exception;
         }
 
-        $eventId = GeneralUtility::makeInstance(Client::class)->captureException($exception);
+        $eventDispatcher = GeneralUtility::makeInstance(EventDispatcherInterface::class);
+
+        $event = $eventDispatcher->dispatch(
+            new BeforeSentryCaptureEvent($exception)
+        );
+
+        if (!$event->isPropagationStopped()) {
+            $exceptionToSend = $event->getException();
+            $eventId = GeneralUtility::makeInstance(Client::class)->captureException($exceptionToSend);
+        }
+
         $errorMessage = parent::handle($exception, $contentObject, $contentObjectConfiguration);
 
         if (ConfigurationService::showEventId()) {
